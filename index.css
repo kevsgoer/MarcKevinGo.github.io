@@ -1,0 +1,184 @@
+body{
+    /* justify-items: center; */
+    /* background-color: aqua; */
+}
+body > div:nth-child(odd){
+    background-color: rgb(29, 28, 25);
+}
+body > div:nth-child(even){
+    background-color: black;
+}
+
+
+.forNav {
+    /* border: 1px solid blue; */
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/me_background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+.details{
+    color: white;
+}
+.logo {
+    color: white;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.logo span{
+    color: red;
+}
+
+nav ul li a{
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(242, 22, 22);
+    transition: .4s;
+}
+
+.center {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: blue;
+    justify-content: center;
+    /* border-color: red;
+    border-style: solid; */
+    /* padding: 20px 20px; */
+    /* min-height: 100vh; */
+}
+
+
+
+.work {
+    color: blue;
+    font-size: 2.5rem;
+    /* background-color: rgb(227, 162, 82); */
+    width: 100%;
+}
+.work ul li > div{
+    display: flex;
+    flex-direction: row;
+}
+.work-name{
+    width: 30%;
+    height: 100%;
+    padding: 50px;
+    /* background-color: #3498db; */
+    /* clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    font-style: italic;
+    transition: 0.5s;
+}
+.work-name:hover{
+    translate: smooth;
+    font-size: 4rem;
+    background: linear-gradient(45deg, #dd5b5b, #591ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.work-details{
+    width: 70%;
+    /* height: 100%; */
+    /* background-color: #575251; */
+    background: linear-gradient(to bottom, grey, black);
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.work-details div{
+    margin-left: 10%;
+    border-bottom: solid 1px red;
+}
+
+.work-container {
+
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: blue;
+    justify-content: center;
+    color: rgb(6, 230, 6);
+    font-size: 2.5rem;
+}
+.interest span{
+    padding: 30px;
+}
+
+.interest-list{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* min-height: 100vh; */
+    min-height: 80vh;
+}
+
+.programmer, .gamer, .trader {
+    height: 80%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.programmer {
+    
+    background-image: url(../images/programmer.png);
+}
+
+.gamer {
+    background-image: url(../images/gamer.png);
+}
+.trader {
+    background-image: url(../images/trader.png);
+}
+.interest-list >div:nth-child(odd){
+    background-color: rgb(29, 28, 25);
+    color:  rgb(123, 182, 234);
+}
+.interest-list >div:nth-child(even){
+    background-color: rgb(123, 182, 234);
+    color: aliceblue;
+}
+.interest-list >div{
+    flex: 1;
+}
+.interest-title{
+    height: 20%;
+}
