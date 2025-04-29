@@ -1,0 +1,118 @@
+body > div {
+    margin: 0;
+    padding: 0;
+}
+
+body > div:nth-child(odd){
+    background-color: rgb(29, 28, 25);
+}
+body > div:nth-child(even){
+    background-color: black;
+}
+
+
+.forNav {
+    height: auto;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+.mobile-background {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.menu-button {
+    display: none;
+    font-size: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: 5px;
+}
+
+nav > a {
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding-top: 30px;
+}
+.logo {
+    color: white;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 50px;
+}
+
+.logo span{
+    color: red;
+}
+
+nav ul li a{
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(242, 22, 22);
+    transition: .4s;
+}
+.about-details{
+    padding: 50px 80px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .menu-button{
+        display: block;
+    }
+    #menu {
+        display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: black; /* Add a background for visibility */
+    border: 1px solid white; /* Optional: Add border */
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 150px; /* Adjust width as needed */
+    z-index: 1000; /* Make sure it's above */
+    }
+    #menu.show {
+        display: flex;
+    }
+    nav {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .forNav {
+
+        background-image: none;
+        background-color: black;
+        height: auto;
+      }
+    #menu li{
+        padding: 5px 0;
+    }
+    .about-details{
+        padding: 25px 40px;
+    }
+}
