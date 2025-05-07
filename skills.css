@@ -122,13 +122,13 @@ nav ul li a:hover{
     font-size: 1.5rem;
 }
 .html {
-    width: 60%;
+    width: 70%;
     height: 30px;
-    background-color: rgb(148, 224, 54);
+    background-color: rgb(94, 194, 23);
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
     justify-content: center;
     text-align: center;
-    color: rgb(148, 224, 54);
+    color: rgb(94, 194, 23);
     font-size: 1.5rem;
 }
 .css {
@@ -199,6 +199,16 @@ nav ul li a:hover{
     justify-content: center;
     text-align: center;
     color: yellow;
+    font-size: 1.5rem;
+}
+.mySQL {
+    width: 70%;
+    height: 30px;
+    background-color: rgb(94, 194, 23);
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+    justify-content: center;
+    text-align: center;
+    color: rgb(94, 194, 23);
     font-size: 1.5rem;
 }
 
